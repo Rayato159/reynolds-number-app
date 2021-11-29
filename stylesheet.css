@@ -1,0 +1,37 @@
+body {
+    font-family: Arial;
+    margin: 2em;
+}
+
+.form-input {
+    margin-top: 8px;
+}
+
+button {
+    border: 0 solid;
+    border-radius: 6px;
+    color: #FFFFFF;
+    background-color: #009DAE;
+    padding: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+input {
+    padding: 4px;
+}
+
+.result {
+    display: none;
+    margin-top: 8px;
+}
+
+.error {
+    display: none;
+    color: #FE0000;
+}
+
+.loading {
+    display: none;
+    margin-top: 8px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reynolds-Number-Calculator</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+    <h1>Reynolds Number Calculator</h1>
+    <div class="container">
+        <form id="reynolds-form">
+            <div class="form-input">
+                <label>Density</label>
+                <input id="density" type="text" placeholder="kg/m^3">
+            </div>
+            <div class="form-input">
+                <label>Velocity</label>
+                <input id="velocity" type="text" placeholder="m/s">
+            </div>
+            <div class="form-input">
+                <label>Length</label>
+                <input id="length" type="text" placeholder="m">
+            </div>
+            <div class="form-input">
+                <label>Dynamic Viscosity</label>
+                <input id="viscos" type="text" placeholder="kg/m-s">
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div class="result">
+            <div class="result-item">
+                <label>Result</label>
+                <input id="reynolds-result">
+            </div>
+        </div>
+
+        <div class="error">
+            <p>Error!!! Please input a number</p>
+        </div>
+
+        <div class="loading">
+            Loading...
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
