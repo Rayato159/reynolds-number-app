@@ -21,6 +21,26 @@ input {
     padding: 4px;
 }
 
+#density {
+    margin-left: 10px;
+}
+
+#velocity {
+    margin-left: 8px;
+}
+
+#length {
+    margin-left: 15px;
+}
+
+#viscos {
+    margin-left: 6px;
+}
+
+#reynolds-result {
+    margin-left: 6px;
+}
+
 .result {
     display: none;
     margin-top: 8px;
