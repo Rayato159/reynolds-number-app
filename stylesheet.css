@@ -1,6 +1,23 @@
 body {
     font-family: Arial;
-    margin: 2em;
+    margin: 0;
+    background-color: #C2FFF9;
+}
+
+.navbar {
+    margin: 0 0 2em 0;
+    background-color: #009DAE;
+    overflow: hidden;
+}
+
+.navbar h1 {
+    margin: 0 0 0 0.5em;
+    padding: 0.5em;
+    color: #FFFFFF;
+}
+
+.container {
+    margin: 0 0 0 2em;
 }
 
 .form-input {

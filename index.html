@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="./stylesheet.css">
 </head>
 <body>
-    <h1>Reynolds Number Calculator</h1>
+    <div class="navbar">
+        <h1><i>Reynolds Number Calculator</i></h1>
+    </div>
     <div class="container">
-        <form id="reynolds-form">
+        <form id="reynolds-form" autocomplete="off">
             <div class="form-input">
                 <label>Density</label>
                 <input id="density" type="text" placeholder="kg/m^3">
@@ -35,6 +37,9 @@
                 <label>Result</label>
                 <input id="reynolds-result">
             </div>
+            <div class="result-item">
+                <p style="margin-top: 0.5em;">This project was created by HashTable48</p>
+            </div>
         </div>
 
         <div class="error">
@@ -45,7 +50,6 @@
             Loading...
         </div>
     </div>
-
     <script src="./app.js"></script>
 </body>
 </html>
