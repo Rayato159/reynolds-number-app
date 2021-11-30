@@ -4,7 +4,7 @@
   "description": "<h1>Reynolds-Number-App🛩</h1>",
   "main": "app.js",
   "scripts": {
-    "start": "live-server"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/Rayato159/Reynolds-Number-App#readme",
   "dependencies": {
-    "live-server": "^1.2.1"
+    "express": "^4.17.1"
   }
 }

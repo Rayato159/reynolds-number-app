@@ -1,31 +1,21 @@
-document.querySelector("#reynolds-form").addEventListener('submit', e => {
+const express = require('express')
+const path = require('path')
 
-    const result = document.querySelector(".result").style.display = 'none'
-    const loadScreen = document.querySelector(".loading").style.display = 'block'
-    const showError = document.querySelector(".error").style.display = 'none'
+const app = express()
+const port = process.env.PORT || 3000
 
-    setTimeout(() => {
+const publicDir = path.join(__dirname, './public')
 
-        const density = parseFloat(document.querySelector("#density").value)
-        const velocity = parseFloat(document.querySelector("#velocity").value)
-        const length = parseFloat(document.querySelector("#length").value)
-        const viscos = parseFloat(document.querySelector("#viscos").value)
+app.use(express.static(publicDir))
 
-        let reynolds_number = document.querySelector("#reynolds-result")
-        reynolds_number.value = ((density * velocity * length) / viscos).toFixed(6)
-
-        if (isNaN(reynolds_number.value)) {
-            const result = document.querySelector(".result").style.display = 'none'
-            const loadScreen = document.querySelector(".loading").style.display = 'none'
-            const showError = document.querySelector(".error").style.display = 'block'
-            return
-        }
-
-        const result = document.querySelector(".result").style.display = 'block'
-        const loadScreen = document.querySelector(".loading").style.display = 'none'
-
-    }, 1000)
-
-    e.preventDefault()
+app.get('', (req, res) => {
+    res.send('index')
 })
 
+app.get('*', (req, res) => {
+    res.send('404 ERROR! Page not found.')
+})
+
+app.listen(port, () => {
+    console.log('Server is up on port ' + port + '.')
+})
