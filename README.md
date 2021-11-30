@@ -25,9 +25,60 @@ High values of the parameter indicate that viscous forces are small and the flow
   <h3><strong>Time to code!!!</strong></h3>
     <p>Build a form to receive 4 variables (Density, Velocity, Length and, Dynamic Viscosity)</p>
   
-    ```Javascript
-      console.log('Test')
-    ```
+```html
+<form id="reynolds-form" autocomplete="off">
+  <div class="form-input">
+      <label>Density</label>
+      <input id="density" type="text" placeholder="kg/m^3">
+  </div>
+  <div class="form-input">
+      <label>Velocity</label>
+      <input id="velocity" type="text" placeholder="m/s">
+  </div>
+  <div class="form-input">
+      <label>Length</label>
+      <input id="length" type="text" placeholder="m">
+  </div>
+  <div class="form-input">
+      <label>Dynamic Viscosity</label>
+      <input id="viscos" type="text" placeholder="kg/m-s">
+  </div>
+  <button type="submit">Calculate</button>
+</form>
+```
+  <br>
+  <p><strong>Explain for each tag</strong></p>
+  <p>I created a form tag to grab a variable to put to the Reynolds Number function to calculate the result. The form tag covers all the input tags. (Parent of an input tag)</p>
+  
+```html
+<form id="reynolds-form" autocomplete="off"></form>
+```
+  <br>
+  <p>The div tag will make all child tag into one group. This will be easy to style config in later.</p>
+  
+```html
+<div class="form-input"></div>
+```
+  <br>
+  <p>Label tag is to label an input box.</p>
+  
+```html
+<label>Density</label>
+```
+  <br>
+  <p>Input tag is a box to put a value into itself. The placeholder is a text in the box to describe some message.</p>
+  
+```html
+<input id="density" type="text" placeholder="kg/m^3">
+```
+  <br>
+  <p>Button tag is for receiving the "submit" action to keep all input and store at a variable.</p>
+  
+```html
+<button type="submit">Calculate</button>
+```
+  <br>
+  <p>All above are the main HTML structure of this project. You can do something more to make it more look better.</p>
   
 <h2 id="js-create">Work with Javascript!!!</h2>
 <h2 id="style-create">Make it more beautiful with CSS</h2>
