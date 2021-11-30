@@ -1,4 +1,4 @@
-<h1>Reynolds-Number-App</h1>
+<h1>Reynolds-Number-App🛩</h1>
 
 <p>I have studied aeronautical engineering but I'd love to code too much. This is a little project about mixing and matching with vanilla Javascript web-app for practice.</p>
 
