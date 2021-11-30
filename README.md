@@ -86,7 +86,13 @@ High values of the parameter indicate that viscous forces are small and the flow
   
   <h3><strong>Let's get started!!!</strong></h3>
   
-  <p>First, To get a submit event</p>
+  <p>First, import the Javascript file to the bottom of body part of the HTML file. src="file path to Javascript"</p>
+  
+```html
+<script src="./app.js"></script>
+```
+  <br>
+  <p>To get a submit event</p>
   
 ```Javascript
 document.querySelector("#reynolds-form").addEventListener('submit', e => {
@@ -162,5 +168,37 @@ document.querySelector("#reynolds-form").addEventListener('submit', e => {
     e.preventDefault()
 })
 ```
-  
 <h2 id="style-create">Make it more beautiful with CSS</h2>
+  <p>In this part, it's up to your experience and creative mindsets. You can make anything for your web app to look better.</p>
+  <h3><strong>Let's import the CSS stylesheet to your HTML file.</strong></h3>
+
+  <p>Insert this tag into the heading of HTML file. href="CSS file path"</p>
+  
+```html
+<link rel="stylesheet" href="./stylesheet.css">
+```
+  
+  <p>CSS example</p>
+  
+```css
+/* Reference to tag */
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #C2FFF9;
+}
+
+/* Reference to class */
+.navbar {
+    margin: 0 0 2em 0;
+    background-color: #009DAE;
+    overflow: hidden;
+}
+
+/* Reference to id */
+#viscos {
+    margin-left: 6px;
+}
+```
+<br>
+<p><strong>For more infomation with HTML, CSS and Javascript free! <a href="https://www.w3schools.com/">click!</a></strong>
